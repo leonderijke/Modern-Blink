@@ -1,0 +1,31 @@
+{
+  "name": "modern-blink",
+  "version": "0.0.0",
+  "description": "The <blink> element resurrected as an HTML Custom Element",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonderijke/Modern-Blink"
+  },
+  "keywords": [
+    "blink",
+    "custom",
+    "element"
+  ],
+  "author": "Leon de Rijke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonderijke/Modern-Blink/issues"
+  },
+  "homepage": "https://github.com/leonderijke/Modern-Blink",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-header": "^1.0.5",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.1"
+  }
+}

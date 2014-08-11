@@ -1,0 +1,17 @@
+/*!
+ * modern-blink - The <blink> element resurrected as an HTML Custom Element
+ * @version v0.0.0
+ * @link https://github.com/leonderijke/Modern-Blink
+ * @license MIT
+ */
+@-webkit-keyframes modern-blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes modern-blink {
+	50% {
+		opacity: 0;
+	}
+}
