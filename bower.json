@@ -1,0 +1,26 @@
+{
+  "name": "modern-blink",
+  "version": "0.0.0",
+  "authors": [
+    "Leon de Rijke"
+  ],
+  "description": "The <blink> element resurrected as an HTML Custom Element",
+  "main": [
+    "dist/modern-blink.min.js",
+    "dist/modern-blink.min.css"
+  ],
+  "keywords": [
+    "blink",
+    "custom",
+    "element"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/leonderijke/Modern-Blink",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
