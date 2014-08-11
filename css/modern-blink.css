@@ -1,0 +1,11 @@
+@-webkit-keyframes modern-blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes modern-blink {
+	50% {
+		opacity: 0;
+	}
+}
