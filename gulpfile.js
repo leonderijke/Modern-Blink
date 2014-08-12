@@ -1,3 +1,5 @@
+var args = require('yargs').argv;
+var bump = require('gulp-bump');
 var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var header = require('gulp-header');
@@ -48,6 +50,14 @@ gulp.task('browser-sync', function() {
 			baseDir: './'
 		}
 	});
+});
+
+gulp.task('bump', function() {
+	var type = args.bump || 'patch';
+
+	return gulp.src(['./package.json', './bower.json'])
+		.pipe(bump({ type: type }))
+		.pipe(gulp.dest('./'));
 });
 
 gulp.task('watch', ['build-js', 'build-css', 'browser-sync'], function() {
