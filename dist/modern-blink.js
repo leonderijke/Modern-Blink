@@ -15,21 +15,22 @@
 	};
 
 	proto.attributeChangedCallback = function(attrName, oldVal, newVal) {
-		if ( /^(duration|iterationCount)$/.test(attrName) ) {
+		if ( /^(duration|iterationCount|run)$/.test(attrName) ) {
 			this.readAttributes();
 			this.updateAnimation();
 		}
 	};
 
 	proto.readAttributes = function() {
-		this.duration = this.getAttribute('duration');
-		this.iterationCount = this.getAttribute('iterationCount');
+		this.duration = this.getAttribute('duration') || '1000ms';
+		this.iterationCount = this.getAttribute('iterationCount') || 'infinite';
+		this.run = (this.getAttribute('run') !== "false") || false;
 	};
 
 	proto.updateAnimation = function() {
-		var animationName = 'modern-blink',
-			animationDuration = this.duration || '1000ms',
-			animationIterationCount = this.iterationCount || 'infinite';
+		var animationName = (this.run) ? 'modern-blink' : '',
+			animationDuration = (this.run) ? this.duration : '',
+			animationIterationCount = (this.run) ? this.iterationCount : '';
 
 		this.style.webkitAnimationName = animationName;
 		this.style.animationName = animationName;
