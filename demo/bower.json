@@ -1,0 +1,7 @@
+{
+  "name": "modern-blink-demo",
+  "private": true,
+  "dependencies": {
+    "document-register-element": "WebReflection/document-register-element#~0.0.8"
+  }
+}
